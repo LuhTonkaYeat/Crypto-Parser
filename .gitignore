@@ -1,0 +1,14 @@
+/bin/
+/server
+/cli
+
+.vscode/
+.idea/
+
+.DS_Store
+
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
