@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    command: server
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    container_name: crypto-api
+
+  cli:
+    build: .
+    command: cli
+    network_mode: "host"
+    profiles:
+      - cli
